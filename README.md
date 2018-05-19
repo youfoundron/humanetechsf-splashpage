@@ -26,9 +26,9 @@ $ yarn
 ```
 
 ### Develop
-Starts the dev server at `localhost:3000`
+Starts the dev server at [localhost:3000](localhost:3000).  
 `$ yarn dev`
 
 ### Deploy
-Builds static source and pushes to `gh-pages` branch.
+Builds static source and pushes to `gh-pages` branch.  
 `$ yarn deploy`
