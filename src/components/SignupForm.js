@@ -49,6 +49,9 @@ export default () => (
             text-align: center;
             background: black;
             color: white;
+            font-weight: bold;
+            border-radius: 0;
+            -webkit-appearance: none;
             cursor: pointer;
             ${css(mq({
               'font-size': ['.875rem', '.875rem', '1rem'],
