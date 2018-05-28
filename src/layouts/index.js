@@ -12,6 +12,15 @@ injectGlobal`
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
   }
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro'),
+      local('SourceSansPro-Regular'),
+      url(/fonts/SourceSansPro-Regular.woff2)
+      format('woff2');
+  }
   html {
     background: white;
   }

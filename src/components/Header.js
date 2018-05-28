@@ -4,7 +4,7 @@ import styled from 'react-emotion'
 const HeaderOuter = styled.header`padding: 0 20px;`
 const HeaderInner = styled.div`padding: 20px 0;`
 const Logo = () => (
-  <img src='/humanetech-logo.png' width={240} />
+  <img src={require('../../static/humanetech-logo.png')} width={240} />
 )
 
 const Header = () => (

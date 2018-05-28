@@ -1,13 +1,14 @@
 import React from 'react'
+import favicon from '../static/favicon.ico'
 
-// let styles
-// if (process.env.NODE_ENV === 'production') {
-//   try {
-//     styles = require(`!raw-loader!../public/styles.css`)
-//   } catch (e) {
-//     console.log(e)
-//   }
-// }
+let styles
+if (process.env.NODE_ENV === 'production') {
+  try {
+    styles = require(`!raw-loader!../public/styles.css`)
+  } catch (e) {
+    console.log(e)
+  }
+}
 
 const Html = ({ headComponents, body, postBodyComponents }) => (
   <html>
@@ -20,8 +21,8 @@ const Html = ({ headComponents, body, postBodyComponents }) => (
       />
 
       {/* Fonts + Favicon */}
-      <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' />
+      <link rel='shortcut icon' type='image/x-icon' href={favicon} />
+      {/* <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' /> */}
 
       <title>Humane Tech SF</title>
       <meta property='description' content="The Center for Humane Technology's unofficial SF community chapter." />
@@ -34,19 +35,19 @@ const Html = ({ headComponents, body, postBodyComponents }) => (
       <meta property='og:title' content='Humane Tech SF' />
       <meta property='og:description' content="The Center for Humane Technology's unofficial SF community chapter." />
       <meta property='og:url' content='https://humanetechsf.com' />
-      <meta property='og:image' content='/humanetech-banner.png' />
+      <meta property='og:image' content={require('../static/humanetech-banner.png')} />
 
       {/* Twitter card meta */}
       {/* <meta name='twitter:card' content='summary' /> */}
       {/* <meta name='twitter:site' content='@humanetechsf' /> */}
 
       {/* Styles */}
-      {/* {process.env.NODE_ENV === 'production' ? (
+      {process.env.NODE_ENV === 'production' ? (
         <style
           id='gatsby-inlined-css'
           dangerouslySetInnerHTML={{ __html: styles }}
         />
-      ) : null} */}
+      ) : null}
     </head>
     <body>
       <div
