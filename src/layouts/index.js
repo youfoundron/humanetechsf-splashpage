@@ -29,7 +29,7 @@ injectGlobal`
   }
   body {
     height: 100%;
-    background: linear-gradient(#F6D9D9, #FFFFFF);
+    background: linear-gradient(#F5D0D0, #FFFFFF);
   }
 `
 
