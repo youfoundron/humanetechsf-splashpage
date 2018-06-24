@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from 'emotion'
 import styled from 'react-emotion'
+import Medium from 'react-icons/lib/fa/medium'
 import { Slack, MessageSquare, Facebook, Mail } from 'react-feather'
 
 const FooterOuter = styled.footer`
@@ -23,11 +24,20 @@ const logoLinkStyles = css`
   }
 `
 
+const mediumIconStyles = css`
+  ${logoLinkStyles}
+  display: inline-block;
+  vertical-align: top;
+`
+
 const Footer = () => (
   <FooterOuter>
     <FooterInner>
       <a className={logoLinkStyles} href='https://slack.humanetechsf.com' target='_blank'>
         <Slack />
+      </a>
+      <a className={mediumIconStyles} href='https://medium.com/@humanetechsf'>
+        <Medium />
       </a>
       <a className={logoLinkStyles} href='https://www.facebook.com/groups/2046706728941748/' target='_blank'>
         <Facebook />
