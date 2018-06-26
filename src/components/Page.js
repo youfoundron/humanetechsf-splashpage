@@ -4,7 +4,7 @@ import { mq } from './util'
 const Page = styled.div`
   padding: 0 20px;
   ${css(mq({
-    'margin-top': ['0em', '3em']
+    'margin-top': ['1em', '3em']
   }))}
 `
 

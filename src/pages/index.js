@@ -14,13 +14,19 @@ const P = styled.p`
   font-size: 1.25rem;
 `
 
+const Link = styled.a`
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+`
+
 export default () => (
   <Page>
     <Container>
       <h1>Humane Tech</h1>
       <h2>San Francisco</h2>
       <br />
-      <P>We are Humane Tech SF, the Center for Humane Technology's San Francisco community chapter.</P>
+      <P>We are Humane Tech SF, the <Link href='http://humanetech.com/' target='_blank'>Center for Humane Technology's</Link> San Francisco community chapter.</P>
       <br />
       <P>We are a group of volunteers organizing discussions around ethics in technology.</P>
       <br />

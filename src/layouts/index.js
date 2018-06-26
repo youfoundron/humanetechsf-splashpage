@@ -47,7 +47,7 @@ const ChildrenWrapper = styled.div`
 
 const Layout = ({ children }) => (
   <PageWrapper>
-    <Header />
+    {/* <Header /> */}
     <ChildrenWrapper>{children()}</ChildrenWrapper>
     <Footer />
   </PageWrapper>
